@@ -1,0 +1,22 @@
+# General junk
+*.log
+*.cache
+*.swp
+*.bak
+.NoteZ
+# App caches
+.cache/
+**/cache/
+**/Cache/
+
+# Secrets
+*.key
+*.pem
+*.token
+secrets.conf
+.env
+
+# Machine-specific
+monitors.xml
+*.db
+#made by chatGPT
