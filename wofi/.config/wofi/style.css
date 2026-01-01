@@ -26,7 +26,7 @@
 @define-color	blue-rgb  rgb(137, 180, 250);
 @define-color	lavender  #b4befe;
 @define-color	lavender-rgb  rgb(180, 190, 254);
-@define-color	text  #cdd6f4;
+@define-color	text  #FFFFFF;
 @define-color	text-rgb  rgb(205, 214, 244);
 @define-color	subtext1  #bac2de;
 @define-color	subtext1-rgb  rgb(186, 194, 222);
@@ -44,13 +44,13 @@
 @define-color	surface1-rgb  rgb(69, 71, 90);
 @define-color	surface0  #313244;
 @define-color	surface0-rgb  rgb(49, 50, 68);
-@define-color	base  #1e1e2e;
+@define-color	base #1A1414;
 @define-color	base-rgb  rgb(30, 30, 46);
 @define-color	mantle  #181825;
 @define-color	mantle-rgb  rgb(24, 24, 37);
 @define-color	crust  #11111b;
 @define-color	crust-rgb  rgb(17, 17, 27);
-
+@define-color	red2 #FF0000;
 * {
   font-family: 'CaskaydiaCove Nerd Font', monospace;
   font-size: 18px;
@@ -60,7 +60,7 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @lavender;
+  border: 2px solid @red2;
   border-radius: 8px;
   background-color: @base;
 }
@@ -121,18 +121,18 @@ window {
 
 #entry arrow {
   border: none;
-  color: @lavender;
+  color: @red2;
 }
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid @lavender;
+  border: 0.11em solid @red2;
 }
 
 #entry:selected #text {
-  color: @mauve;
+  color: @red2;
 }
 
 #entry:drop(active) {
-  background-color: @lavender!important;
+  background-color: @red2!important;
 }
