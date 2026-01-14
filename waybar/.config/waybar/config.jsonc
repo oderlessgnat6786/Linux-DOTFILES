@@ -1,5 +1,8 @@
 {
     "position": "top",
+    "layer": "top",
+    "margin-top": 1,
+    "margin-bottom": 5,
     "modules-left": [
         "custom/start",
         "hyprland/workspaces"
@@ -18,12 +21,12 @@
     },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
-        "format-muted": "",
+        "format-muted": " ",
         "format-icons": {
             "default": [
-                "",
-                "",
-                " "
+                " ",
+                " ",
+                "  "
             ]
         },
         "on-click": "pavucontrol"
@@ -34,9 +37,9 @@
     },
     "network": {
         "format": "{icon}",
-        "format-wifi": "",
-        "format-ethernet": "",
-        "format-disconnected": "󰤭", //An empty format will hide the module.
+        "format-wifi": " ",
+        "format-ethernet": " ",
+        "format-disconnected": "󰤭 ", //An empty format will hide the module.
         "tooltip-format": "{ifname}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname} ",
@@ -48,7 +51,7 @@
         "tooltip-format": "Menu"
     },
     "custom/start": {
-        "format": "",
+        "format": " ",
         "tooltip-format": "Start Menu",
         "on-click": "~/.config/waybar/scripts/StartToggle.sh"
     },
