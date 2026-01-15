@@ -1,0 +1,8 @@
+@define-color bg0 rgba(25,25,25, 1);
+@define-color gray rgba(31,31,31, 1);
+@define-color bg2 rgba(10,10,10, 1);
+@define-color bg1 rgba(100, 114, 125, 0.8);
+@define-color white #FFFFFF;
+@define-color red #C92000;
+@define-color highlight #DBDBDB;
+@define-color yellow #FFBD5C;

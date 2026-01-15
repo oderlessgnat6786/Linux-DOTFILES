@@ -1,127 +1,171 @@
-@import "mocha.css"; 
+@import 'colors/normal.css';
 
 * {
-    font-family: "MesloLGS Nerd Font Mono Bold";
-    font-size: 16px;
-    min-height: 0;
+    border: none;
+
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 20px;
     font-weight: bold;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 window#waybar {
-    background: transparent;
-    background-color: @crust;
-    color: @overlay0;
-    transition-property: background-color;
-    transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
 }
 
-#window {
-    margin: 8px;
-    padding-left: 8;
-    padding-right: 8;
+tooltip {
+    background: @bg1;
+    border-radius: 12px;
 }
 
-button {
-    box-shadow: inset 0 -3px transparent;
-    border: none;
-    border-radius: 0;
+tooltip label {
+    color: white;
+    padding: 6px;
 }
 
-button:hover {
-    background: inherit;
-    color: @mauve;
-    border-top: 2px solid @mauve;
+#workspaces {
+    background: @bg0;
+    padding: 5px 3px;
+    border-radius: 6px;
+    border: 1px solid @bg2;
+    margin: 0 0 0 12px;
 }
 
 #workspaces button {
-    padding: 0 4px;
-}
-
-#workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @rosewater;
-    border-top: 2px solid @rosewater;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    background: @gray;
+    color: transparent;
+    transition: all 250ms ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    padding: 0px 4px;
+    min-width: 50px;
+    margin: 0px 2px;
+    background: @red;
+
+    transition: all 250ms ease-in-out;
+    color: @gray;
+}
+
+#workspaces button:hover {
+    padding: 0px 4px;
+    min-width: 50px;
+    margin: 0px 2px;
+    border-radius: 16px;
+    background: @highlight;
+    transition: all 250ms ease-in-out;
+    color: @gray;
+    background-size: 400% 400%;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    background: @yellow;
+
+    transition: all 250ms ease-in-out;
+    color: @gray;
+    background-size: 400% 400%;
 }
 
 #pulseaudio,
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#wireplumber,
-#tray,
 #network,
-#mode,
-#scratchpad {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+#clock,
+#custom-menu,
+#custom-start,
+#taskbar,
+#custom-terminal,
+#custom-kill {
+    background: @bg0;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 6px;
+    border-radius: 20px;
+    transition: all 250ms ease-in-out;
+
 }
 
-#clock {
-    color: @maroon;
-    border-bottom: 2px solid @maroon;
+#taskbar button {
+    margin: 0 2px;
+    padding: 0 5px;
+    color: white;
+    background: @bg0;
+    transition: all 250ms ease-in-out;
 }
 
-#clock.date {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+#taskbar button:hover {
+    margin: 0 2px;
+    padding: 0 5px;
+    color: white;
+    background: rgba(95, 95, 95, 0.5);
+    transition: all 250ms ease-in-out;
 }
 
-#pulseaudio {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+#taskbar button.active {
+    margin: 0 2px;
+    padding: 0 5px;
+    background: rgb(67, 67, 67);
+    transition: all 250ms ease-in-out;
+    border-radius: 4px;
+}
+
+#custom-start:hover{
+    transition: all 250ms ease-in-out;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#taskbar button:hover {
+    min-width: 20px;
+    margin: 0 2px;
+    padding: 0 5px;
+    transition: all 250ms ease-in-out;
+}
+
+#custom-menu {
+    transition: all 250ms ease-in-out;
+    color: white;
 }
 
 #network {
-    color: @yellow;
-    border-bottom: 2px solid @yellow;
+    transition: all 250ms ease-in-out;
+    color: goldenrod;
 }
 
-#idle_inhibitor {
-    margin-right: 12px;
-    color: #7cb342;
+#pulseaudio {
+    color: rgb(236, 113, 255);
+    transition: all 250ms ease-in-out;
 }
 
-#idle_inhibitor.activated {
-    color: @red;
+#clock {
+    color: antiquewhite;
+    transition: all 250ms ease-in-out;
 }
 
-#battery {
-    color: @green;
-    border-bottom: 2px solid @green;
+#custom-start {
+    padding-left: 8px;
+    padding-right: 16px;
+    color: turquoise;
+    border-radius: 999px;
+    transition: all 250ms ease-in-out;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
-}
+#pulseaudio:hover,
+#network:hover,
+#clock:hover,
+#custom-menu:hover,
+#taskbar:hover,
+#custom-terminal:hover,
+#custom-kill:hover {
+    background: @bg0;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 6px;
+    border-radius: 20px;
+    min-width: 30px;
+    transition: all 250ms ease-in-out;
 
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-    margin-right: 0;
-}
-
-#custom-vpn {
-    color: @lavender;
-    border-radius: 15px;
-    padding-left: 6px;
-    padding-right: 6px;
 }

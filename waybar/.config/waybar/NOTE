@@ -1,0 +1,15 @@
+LEFT MARGIN
+start button to open app viewer
+workspace number (to enable easy switching)
+app list (to show running app icons)
+
+MIDDLE MARGIN
+window name
+... button to either (close, float/unfloat, pivot ) #optional
+
+RIGHT MARGIN
+volume (opens rofi applet for control)
+wifi status (shows wifi and opens rofi panel on click)
+clock (shows calendar on clicking, and displays the time in: Day, DayNumber, Time in 12 hr format)
+menu button to open menu for quick system settings, wifi, time, notifications, etc
+
