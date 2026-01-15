@@ -1,4 +1,5 @@
 @import 'colors/normal.css';
+
 * {
     border: none;
 
@@ -10,42 +11,47 @@
     padding: 0;
 }
 
-window#waybar{
-    background: transparent;
+window#waybar {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
 }
 
 tooltip {
-    background:@bg1;
-    border-radius:12px;
+    background: @bg1;
+    border-radius: 12px;
 }
 
-tooltip label{
-    color:white;
-    padding:6px;
+tooltip label {
+    color: white;
+    padding: 6px;
 }
-#workspaces{
+
+#workspaces {
     background: @bg0;
     padding: 5px 3px;
     border-radius: 6px;
     border: 1px solid @bg2;
     margin: 0 0 0 12px;
 }
+
 #workspaces button {
     padding: 0px 4px;
     margin: 0px 2px;
     background: @gray;
-    color:transparent;
+    color: transparent;
     transition: all 250ms ease-in-out;
 }
+
 #workspaces button.active {
     padding: 0px 4px;
     min-width: 50px;
     margin: 0px 2px;
     background: @red;
-    
+
     transition: all 250ms ease-in-out;
     color: @gray;
 }
+
 #workspaces button:hover {
     padding: 0px 4px;
     min-width: 50px;
@@ -56,36 +62,110 @@ tooltip label{
     color: @gray;
     background-size: 400% 400%;
 }
-#workspaces button.2urgent {
+
+#workspaces button.urgent {
     padding: 0px 4px;
     margin: 0px 2px;
     background: @yellow;
-    
+
     transition: all 250ms ease-in-out;
     color: @gray;
     background-size: 400% 400%;
 }
-#pulseaudio,#network,#clock,#custom-menu,#custom-start{
+
+#pulseaudio,
+#network,
+#clock,
+#custom-menu,
+#custom-start,
+#taskbar,
+#custom-terminal,
+#custom-kill {
     background: @bg0;
     padding: 0 15px 0 15px;
     margin: 0 0 0 6px;
     border-radius: 20px;
+    transition: all 250ms ease-in-out;
+
 }
-#custom-menu{
-    color:white;
+
+#taskbar button {
+    margin: 0 2px;
+    padding: 0 5px;
+    color: white;
+    background: @bg0;
+    transition: all 250ms ease-in-out;
 }
-#network{
-    color:goldenrod;
+
+#taskbar button:hover {
+    margin: 0 2px;
+    padding: 0 5px;
+    color: white;
+    background: rgba(95, 95, 95, 0.5);
+    transition: all 250ms ease-in-out;
 }
-#pulseaudio{
-    color:rgb(236, 113, 255);
+
+#taskbar button.active {
+    margin: 0 2px;
+    padding: 0 5px;
+    background: rgb(67, 67, 67);
+    transition: all 250ms ease-in-out;
+    border-radius: 4px;
 }
-#clock{
-    color:antiquewhite;
+
+#custom-start:hover{
+    transition: all 250ms ease-in-out;
+    min-width: 20px;
+    min-height: 20px;
 }
-#custom-start{
-    padding-left: 3px;
-    padding-right:11px;
-    color:turquoise;
+
+#taskbar button:hover {
+    min-width: 20px;
+    margin: 0 2px;
+    padding: 0 5px;
+    transition: all 250ms ease-in-out;
+}
+
+#custom-menu {
+    transition: all 250ms ease-in-out;
+    color: white;
+}
+
+#network {
+    transition: all 250ms ease-in-out;
+    color: goldenrod;
+}
+
+#pulseaudio {
+    color: rgb(236, 113, 255);
+    transition: all 250ms ease-in-out;
+}
+
+#clock {
+    color: antiquewhite;
+    transition: all 250ms ease-in-out;
+}
+
+#custom-start {
+    padding-left: 8px;
+    padding-right: 16px;
+    color: turquoise;
     border-radius: 999px;
+    transition: all 250ms ease-in-out;
+}
+
+#pulseaudio:hover,
+#network:hover,
+#clock:hover,
+#custom-menu:hover,
+#taskbar:hover,
+#custom-terminal:hover,
+#custom-kill:hover {
+    background: @bg0;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 6px;
+    border-radius: 20px;
+    min-width: 30px;
+    transition: all 250ms ease-in-out;
+
 }

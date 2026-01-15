@@ -5,10 +5,13 @@
     "width": 1900,
     "margin-bottom": 5,
     "modules-left": [
-        "custom/start"
+        "custom/start",
+        "wlr/taskbar"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "custom/kill",
+        "hyprland/workspaces",
+        "custom/terminal"
     ],
     "modules-right": [
         "network",
@@ -16,6 +19,17 @@
         "clock",
         "custom/menu"
     ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "persistent_apps": {
+            "firefox": "",
+            "code": "󰨞",
+            "kitty": ""
+        },
+        "on-click": "activate"
+    },
+
     "hyprland/window": {
         "max-length": 50
     },
@@ -53,14 +67,25 @@
     "custom/start": {
         "format": "",
         "tooltip-format": "Start Menu",
-        "on-click": "~/.config/waybar/scripts/StartToggle.sh"
+        "on-click": "bash ~/.config/waybar/scripts/StartButtonToggle.sh"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
+        "tooltip-format":"View & Change workspaces",
         "on-click": "activate",
         "sort-by-number": true,
         "persistent-workspaces": {
             "*": 5
         }
+    },
+    "custom/terminal": {
+        "format":" ",
+        "on-click":"hyprctl dispatch exec kitty",
+        "tooltip-format":"Launch terminal"
+    },
+    "custom/kill": {
+        "format":"🗙",
+        "on-click":"bash ~/.config/waybar/scripts/KILL.sh",
+        "tooltip-format":"Force quit window"
     }
 }
