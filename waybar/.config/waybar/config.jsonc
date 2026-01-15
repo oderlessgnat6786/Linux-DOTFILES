@@ -1,14 +1,14 @@
 {
     "position": "top",
     "layer": "top",
-    "margin-top": 1,
+    "margin-top": 3,
+    "width": 1900,
     "margin-bottom": 5,
     "modules-left": [
-        "custom/start",
-        "hyprland/workspaces"
+        "custom/start"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "network",
@@ -51,7 +51,7 @@
         "tooltip-format": "Menu"
     },
     "custom/start": {
-        "format": " ",
+        "format": "",
         "tooltip-format": "Start Menu",
         "on-click": "~/.config/waybar/scripts/StartToggle.sh"
     },
