@@ -1,0 +1,30 @@
+{
+    "label" : "lock",
+    "action" : "loginctl lock-session",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "~/.config/scripts/confirm.sh 'Confirm Logout' && hyprctl dispatch exit",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "~/.config/scripts/confirm.sh 'Confirm Shutdown' && systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "~/.config/scripts/confirm.sh 'Confirm Reboot' && systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "suspend",
+    "action" : "~/.config/scripts/confirm.sh 'Confirm Suspend' && systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
