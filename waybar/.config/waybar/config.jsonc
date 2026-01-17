@@ -1,6 +1,6 @@
 {
     "position": "top",
-    "layer": "top",
+    "layer": "bottom",
     "margin-top": 3,
     "width": 1900,
     "margin-bottom": 5,
@@ -9,7 +9,7 @@
         "wlr/taskbar"
     ],
     "modules-center": [
-        "custom/kill",
+        "custom/titlebars",
         "hyprland/workspaces",
         "custom/terminal"
     ],
@@ -83,9 +83,9 @@
         "on-click":"hyprctl dispatch exec kitty",
         "tooltip-format":"Launch terminal"
     },
-    "custom/kill": {
-        "format":"🗙",
-        "on-click":"bash ~/.config/waybar/scripts/KILL.sh",
-        "tooltip-format":"Force quit window"
+    "custom/titlebars": {
+        "format":"...",
+        "on-click":"bash ~/.config/scripts/hyprbars.sh",
+        "tooltip-format":"Toggle window titles"
     }
 }

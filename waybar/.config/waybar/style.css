@@ -3,8 +3,8 @@
 * {
     border: none;
 
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 20px;
+    font-family: "Noto fonts";
+    font-size: 18px;
     font-weight: bold;
     min-height: 0;
     margin: 0;
@@ -30,7 +30,6 @@ tooltip label {
     background: @bg0;
     padding: 5px 3px;
     border-radius: 6px;
-    border: 1px solid @bg2;
     margin: 0 0 0 12px;
 }
 
@@ -80,7 +79,7 @@ tooltip label {
 #custom-start,
 #taskbar,
 #custom-terminal,
-#custom-kill {
+#custom-titlebars {
     background: @bg0;
     padding: 0 15px 0 15px;
     margin: 0 0 0 6px;
@@ -134,15 +133,16 @@ tooltip label {
 #network {
     transition: all 250ms ease-in-out;
     color: goldenrod;
+    font-family: 'Jetbrains Mono Nerd font';
 }
 
 #pulseaudio {
-    color: rgb(236, 113, 255);
+    color: rgb(244, 172, 255);
     transition: all 250ms ease-in-out;
 }
 
 #clock {
-    color: antiquewhite;
+    color: rgb(255, 223, 182);
     transition: all 250ms ease-in-out;
 }
 
@@ -152,6 +152,7 @@ tooltip label {
     color: turquoise;
     border-radius: 999px;
     transition: all 250ms ease-in-out;
+    font-family: 'Jetbrains Mono Nerd font';
 }
 
 #pulseaudio:hover,
@@ -160,7 +161,7 @@ tooltip label {
 #custom-menu:hover,
 #taskbar:hover,
 #custom-terminal:hover,
-#custom-kill:hover {
+#custom-titlebars:hover {
     background: @bg0;
     padding: 0 15px 0 15px;
     margin: 0 0 0 6px;

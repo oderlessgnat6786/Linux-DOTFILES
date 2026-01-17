@@ -1,0 +1,80 @@
+* {
+
+	box-shadow: none;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+window {
+	font-family: "Jetbrains Mono Nerd font";
+
+	background-image: image(url("/home/DEV/.config/backgrounds/one_piece_blur.png"), url("/home/DEV/.config/backgrounds/one_piece_blur.png"));
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+
+}
+
+#box {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+
+button {
+    min-width: 180px;
+    min-height: 260px;
+
+    border-radius: 24px;
+    padding: 18px;
+    margin: 0 18px;
+
+    background-color: rgba(255, 255, 255, 0.809);
+    border-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 72%;
+    background-position: center 35%;
+    
+	text-decoration: transparent;
+}
+
+label {
+	padding-bottom: 80px;
+	font-size: 35px;
+    color: black;
+    opacity: 0.9;
+}
+
+button:focus,button.active,button:hover {
+    background:rgba(255, 69, 63, 0.507);
+    background-repeat: no-repeat;
+    background-size: 72%;
+    background-position: center 35%;
+    color: transparent;
+	border: transparent;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(137, 137, 137, 0.6);
+}
+
+#lock {
+	background-image: image(url("/usr/share/wlogout/assets/lock.svg"), url("/usr/share/wlogout/assets/lock.svg"));
+}
+
+#logout {
+	background-image: image(url("/usr/share/wlogout/assets/logout.svg"), url("/usr/share/wlogout/assets/logout.svg"));
+}
+
+#suspend {
+	background-image: image(url("/usr/share/wlogout/assets/suspend.svg"), url("/usr/share/wlogout/assets/suspend.svg"));
+}
+
+#shutdown {
+	background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"), url("/usr/share/wlogout/assets/shutdown.svg"));
+}
+
+#reboot {
+	background-image: image(url("/usr/share/wlogout/assets/reboot.svg"), url("/usr/share/wlogout/assets/reboot.svg"));
+}
