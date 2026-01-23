@@ -1,7 +1,6 @@
 {
     "position": "top",
     "layer": "bottom",
-    "margin-top": 3,
     "width": 1900,
     "margin-bottom": 5,
     "modules-left": [
@@ -62,7 +61,8 @@
     },
     "custom/menu": {
         "format": "≡",
-        "tooltip-format": "Menu"
+        "tooltip-format": "Menu",
+	"on-click": "swaync-client -t"
     },
     "custom/start": {
         "format": "",
