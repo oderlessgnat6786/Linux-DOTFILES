@@ -20,4 +20,4 @@ alias grep='grep --color=auto'
 alias waybar-conf='vim ~/.config/waybar/config.jsonc'
 alias binds-conf='vim ~/.config/hypr/binds.conf'
 PS1='[\u@\h \W]\$ '
-eval "(ssh-agent -s)"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
