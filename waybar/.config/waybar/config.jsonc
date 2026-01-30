@@ -2,6 +2,7 @@
     "position": "top",
     "layer": "bottom",
     "width": 1900,
+    "margin-top": 7,
     "margin-bottom": 5,
     "modules-left": [
         "custom/start",
@@ -86,6 +87,8 @@
     "custom/titlebars": {
         "format":"...",
         "on-click":"bash ~/.config/scripts/hyprbars.sh",
-        "tooltip-format":"Toggle window titles"
+        "tooltip-format":"Toggle window titles",
+	"on-click-right":"bash hyprctl dispatch hyprexpo:expo toggle"
+
     }
 }

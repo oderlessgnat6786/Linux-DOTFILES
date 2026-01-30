@@ -5,8 +5,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 eval "$(starship init bash)"
-export HYPRSHOT_DIR="/home/DEV/Pictures/Screenshots/Hyprshots"
 
+if [[ -n "$KITTY_WINDOW_ID" ]]; then
+	pfetch
+fi
+
+export HYPRSHOT_DIR="/home/DEV/Pictures/Screenshots/Hyprshots"
+alias neofetch="echo 'Neofetch not availabe, using fastfetch instead' && fastfetch"
 alias vi='vim'
 alias bash-conf='vim ~/.bashrc'
 alias hypr-conf='vim ~/.config/hypr/hyprland.conf'
