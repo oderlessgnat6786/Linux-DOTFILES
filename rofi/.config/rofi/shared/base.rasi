@@ -1,0 +1,22 @@
+@import "rofi/colors.rasi"
+@import "fonts.rasi"
+
+window {
+    background-color: @background;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+listview {
+    spacing: 6px;
+}
+
+element {
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @background;
+}

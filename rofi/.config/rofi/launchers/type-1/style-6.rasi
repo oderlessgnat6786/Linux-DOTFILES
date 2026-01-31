@@ -1,6 +1,6 @@
 /**
  *
- * Author : Aditya Shakya (adi1090x)
+ * Author : Aditya Shakya (adi1090x) but modified by me
  * Github : @adi1090x
  * 
  * Rofi Theme File
@@ -17,6 +17,8 @@ configuration {
     display-window:             " Windows";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
+    
+
 }
 
 /*****----- Global Properties -----*****/
@@ -63,7 +65,7 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
-    padding:                     0px;
+  
     border:                      0px solid;
     border-radius:               10px;
     border-color:                @border-colour;
@@ -83,7 +85,7 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     12px;
     margin:                      0px;
     padding:                     20px;
     border:                      0px solid;
@@ -97,12 +99,12 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    margin:                      0px;
-    padding:                     0px;
+    margin:                      5px 0px;
+    padding:                     10px 14px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @border-colour;
-    background-color:            transparent;
+    background-color:            var(alternate-background);
     text-color:                  @foreground-colour;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
@@ -209,18 +211,11 @@ element normal.active {
     background-color:            var(active-background);
     text-color:                  var(active-foreground);
 }
-element selected.normal {
+element selected {
     background-color:            var(selected-normal-background);
-    text-color:                  var(selected-normal-foreground);
+    text-color:                  #1A1414;
 }
-element selected.urgent {
-    background-color:            var(selected-urgent-background);
-    text-color:                  var(selected-urgent-foreground);
-}
-element selected.active {
-    background-color:            var(selected-active-background);
-    text-color:                  var(selected-active-foreground);
-}
+
 element alternate.normal {
     background-color:            var(alternate-normal-background);
     text-color:                  var(alternate-normal-foreground);
@@ -238,6 +233,7 @@ element-icon {
     text-color:                  inherit;
     size:                        24px;
     cursor:                      inherit;
+    opacity:                     0.95;
 }
 element-text {
     background-color:            transparent;
