@@ -75,8 +75,9 @@
         "tooltip-format":"View & Change workspaces",
         "on-click": "activate",
         "sort-by-number": true,
+	"all-outputs":true,
         "persistent-workspaces": {
-            "*": 5
+		"*": [1, 2, 3, 4, 5]
         }
     },
     "custom/terminal": {
@@ -87,8 +88,8 @@
     "custom/titlebars": {
         "format":"...",
         "on-click":"bash ~/.config/scripts/hyprbars.sh",
-        "tooltip-format":"Toggle window titles",
-	"on-click-right":"bash hyprctl dispatch hyprexpo:expo toggle"
+        "tooltip-format":"Toggle window titles\nRight click to view workspaces",
+	"on-click-right":"sleep 0.2 && hyprctl dispatch hyprexpo:expo toggle"
 
     }
 }
