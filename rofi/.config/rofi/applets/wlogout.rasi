@@ -1,0 +1,59 @@
+@import "shared/base.rasi"
+@import "shared/fonts.rasi"
+@import "~/.config/rofi/colors/oneHAKI.rasi"
+
+configuration {
+    show-icons: false;
+}
+
+window {
+    width: 420px;
+    border-radius: 14px;
+}
+
+mainbox {
+    children: [ "inputbar", "listview" ];
+    padding: 18px;
+    spacing: 14px;
+}
+
+inputbar {
+    enabled: true;
+    padding: 12px 14px;
+    spacing: 8px;
+    background-color: @background-alt;
+    border-radius: 10px;
+
+    children: [ "textbox-prompt-colon", "prompt" ];
+}
+
+textbox-prompt-colon {
+    enabled: false;
+}
+
+prompt {
+    enabled: true;
+    expand: true;
+    text-color: @foreground;
+}
+
+
+entry {
+    enabled: false;
+}
+
+listview {
+    lines: 2;
+    fixed-height: true;
+    scrollbar: false;
+}
+
+element {
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+element-text {
+    horizontal-align: 0.0;
+    vertical-align: 0.5;
+}
