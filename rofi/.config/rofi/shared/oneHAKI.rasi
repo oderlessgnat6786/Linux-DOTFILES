@@ -1,0 +1,18 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+
+* {
+    font: "CaskaydiaCove Nerd Font 18";
+
+    background:     #1A1414;
+    background-alt:     #2d2121;
+    foreground:     #FFFFFF;
+    selected:       #FF836B;
+    active:         #a6e3a1;
+    urgent:         #f38ba8;
+}

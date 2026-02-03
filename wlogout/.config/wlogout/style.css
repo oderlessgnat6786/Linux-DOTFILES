@@ -8,8 +8,7 @@
 window {
 	font-family: "Jetbrains Mono Nerd font";
 
-	background-image: image(url("/home/DEV/.config/backgrounds/one_piece_blur.png"), url("/home/DEV/.config/backgrounds/one_piece_blur.png"));
-	
+    background-color: rgba(0,0,0,0.1);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
