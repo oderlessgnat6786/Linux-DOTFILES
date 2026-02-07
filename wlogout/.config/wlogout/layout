@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session?",
+    "action" : "loginctl lock-session",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -24,7 +24,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "~/.config/scripts/confirm.sh 'Confirm Suspend?' && systemctl suspend",
+    "action" : "~/.config/scripts/confirm.sh 'Confirm Suspend?' && loginctl lock-session && systemctl suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
