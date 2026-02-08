@@ -116,7 +116,7 @@ tooltip label {
 #taskbar button.active {
     margin: 0 2px;
     padding: 0 5px;
-    background: rgb(67, 67, 67);
+    background: rgba(67, 67, 67,0.9);
     transition: all 250ms ease-in-out;
     border-radius: 4px;
 }
@@ -140,7 +140,7 @@ tooltip label {
 }
 
 #network {
-    transition: all 250ms ease-in-out;
+    transition: CaskaydiaCoveall 250ms ease-in-out;
     color: goldenrod;
     font-family: 'Jetbrains Mono Nerd font';
 }

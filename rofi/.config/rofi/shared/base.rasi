@@ -13,6 +13,7 @@
 /*****----- Configuration -----*****/
 configuration {
     
+	kb-cancel: "MousePrimary";
 
 }
 
