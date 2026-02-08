@@ -1,5 +1,5 @@
 @define-color bg0 rgba(25,25,25, 0.9);
-@define-color gray rgba(31,31,31, 0.9);
+@define-color gray rgba(31,31,31, 1);
 @define-color bg2 rgba(10,10,10, 0.8);
 @define-color bg1 rgba(100, 114, 125, 0.8);
 @define-color white #FFFFFF;
