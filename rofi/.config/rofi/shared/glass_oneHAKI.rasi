@@ -1,0 +1,35 @@
+/* glass.rasi — controlled frosted overlay */
+
+/* Window = base glass layer */
+window {
+    transparency: "real";
+    background-color: rgba(26, 20, 20, 0.8);
+}
+
+/* Widgets that normally use background-alt
+   → repaint them with stronger glass (0.75) */
+
+inputbar,
+button,
+textbox,
+scrollbar {
+    background-color: rgba(26, 20, 20, 0.75);
+}
+
+element alternate.normal,
+element normal.normal{
+    transparency: "real";
+    background-color: rgba(26,20,20,0.70);
+}
+
+/* Listview and normal elements must NOT repaint */
+listview,
+mode-switcher,
+message {
+    background-color: transparent;
+}
+
+/* Keep selection readable */
+element selected {
+    background-color: var(selected-normal-background);
+}
