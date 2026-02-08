@@ -1,10 +1,12 @@
 @import "shared/base.rasi"
 @import "shared/fonts.rasi"
-@import ".config/rofi/colors/oneHAKI.rasi"
+@import "~/.config/rofi/colors/oneHAKI.rasi"
 
 listview {
-    fixed-height: false;
+    fixed-height: true;
 }
+
+
 
 window {
     width: 1300px;

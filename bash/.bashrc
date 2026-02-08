@@ -9,7 +9,7 @@ eval "$(starship init bash)"
 if [[ -n "$KITTY_WINDOW_ID" ]]; then
 	pfetch
 fi
-
+alias notif-reload="systemctl --user restart swaync"
 export HYPRSHOT_DIR="/home/DEV/Pictures/Screenshots/Hyprshots"
 alias neofetch="echo 'Neofetch not availabe, using fastfetch instead' && fastfetch"
 alias vi='vim'
