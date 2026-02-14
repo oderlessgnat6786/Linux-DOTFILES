@@ -112,7 +112,7 @@ textbox-prompt-colon {
     padding:                     5px 0px;
     expand:                      false;
     str:                         "🔍";
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  @foreground-colour;
 }
 entry {

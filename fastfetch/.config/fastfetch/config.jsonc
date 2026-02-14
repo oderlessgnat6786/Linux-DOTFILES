@@ -1,34 +1,182 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/backgrounds/ASCII.txt",
+    "padding": {
+      "left": 2,
+      "right": 1,
+      "top": 5
+    }
+  },
+  "monitor": {
+    "separator": ""
+  },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter",
-    "locale",
+    {
+      "type": "title",
+      "keyWidth": 50
+    },
     "break",
-    "colors"
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;123;201;111m┌────HARDWARE─────────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "cpu",
+      "key": "├ CPU",
+      "keyColor": "\u001b[38;2;123;201;111m"
+    },
+    {
+      "type": "gpu",
+      "key": "├󰢮 GPU",
+      "keyColor": "\u001b[38;2;123;201;111m"
+    },
+    {
+      "type": "display",
+      "key": "├󰍹 Display",
+      "keyColor": "\u001b[38;2;123;201;111m"
+    },
+    {
+      "type": "memory",
+      "key": "├󰍛 RAM",
+      "keyColor": "\u001b[38;2;123;201;111m"
+    },
+    {
+      "type": "swap",
+      "key": "├󰾴 Swap",
+      "keyColor": "\u001b[38;2;123;201;111m"
+    },
+    {
+      "type": "disk",
+      "key": "├󰋊 Disk",
+      "keyColor": "\u001b[38;2;123;201;111m",
+      "folders": [
+        "/"
+      ]
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;123;201;111m└─────────────────────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;95;179;255m┌────OS───────────────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "├󰣇 OS",
+      "keyColor": "\u001b[38;2;95;179;255m"
+    },
+    {
+      "type": "host",
+      "key": "├ Host",
+      "keyColor": "\u001b[38;2;95;179;255m"
+    },
+    {
+      "type": "kernel",
+      "key": "├ Kernel",
+      "keyColor": "\u001b[38;2;95;179;255m"
+    },
+    {
+      "type": "packages",
+      "key": "├󰏗 Packages",
+      "keyColor": "\u001b[38;2;95;179;255m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;95;179;255m└─────────────────────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;244;124;101m┌────SOFTWARE─────────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "shell",
+      "key": "├ Shell",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "de",
+      "key": "├󰔃 DE",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "wm",
+      "key": "├ WM",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "wmtheme",
+      "key": "├ Window Manager Theme",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "theme",
+      "key": "├ Theme",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "icons",
+      "key": "├ Icons",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "font",
+      "key": "├󱈚 Font",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "cursor",
+      "key": "├󰇀 Cursor",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "terminal",
+      "key": "├ Terminal",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "terminalfont",
+      "key": "├ Terminal Font",
+      "keyColor": "\u001b[38;2;244;124;101m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;244;124;101m└─────────────────────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[37m┌────MISC─────────────────────────────────────────────────────────────┐",
+      "keyColor": "\u001b[37m"
+    },
+    {
+      "type": "localip",
+      "key": "├󰖩 Local IP",
+      "keyColor": "\u001b[37m"
+    },
+    {
+      "type": "locale",
+      "key": "├󱌯 Locale",
+      "keyColor": "\u001b[37m"
+    },
+    {
+      "type": "uptime",
+      "key": "├󰥔 Uptime",
+      "keyColor": "\u001b[37m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[37m└─────────────────────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "command",
+      "key": "Colors",
+      "text": "echo -e \"\\e[38;2;244;124;101m● \\e[38;2;123;201;111m● \\e[38;2;95;179;255m● \\e[97m● \\e[0m\""
+    }
   ]
 }

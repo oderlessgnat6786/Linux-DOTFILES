@@ -19,5 +19,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias waybar-conf='vim ~/.config/waybar/config.jsonc'
 alias binds-conf='vim ~/.config/hypr/binds.conf'
+alias fastfetch='fastfetch --separator " "'
 PS1='[\u@\h \W]\$ '
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
