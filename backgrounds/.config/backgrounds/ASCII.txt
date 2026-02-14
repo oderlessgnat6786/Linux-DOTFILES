@@ -1,0 +1,20 @@
+                                                 
+                            ─────────────┐       
+   ║                                     │       
+   ║  +++++     ++      +++     ++++     │       
+   ║  +                                  │       
+   ║     #####b  d####b  .aMMMb  dMP dMP │       
+   ║    #MP"d#P dMP.d#P dMP"VMP dMP dMP  │       
+   ║   dM####P #####K" dMP     dMMMMMP           
+   ║  dMP dMP dMP"AMF dMP.aMP dMP dMP            
+   ║ dMP dMP dMP dMP  VMMMP" dMP dMP             
+   ║                                             
+   ║     dMMMMb dMMMMMMP dMP dMP dMP             
+   ║    dMP"dMP   dMP   dMP dMP dMP              
+   ║   dMMMMK"   dMP   dMP dMP dMP               
+   ║  dMP.aMF   dMP   dMP.dMP.dMP                
+   ║ dMMMMP"   dMP    VMMMPVMMP"                 
+   ║  +++++ +++++   ++       ++++++++            
+   ║  +   ++  +++++++ ++++++++                   
+   ╚═════                                        
+                                                 
