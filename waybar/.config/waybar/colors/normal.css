@@ -3,6 +3,7 @@
 @define-color bg2 rgba(10,10,10, 0.8);
 @define-color bg1 rgba(100, 114, 125, 0.8);
 @define-color white #FFFFFF;
-@define-color red #C92000;
+@define-color red1 #C92000;
+@define-color red #FF836B;
 @define-color highlight #DBDBDB;
 @define-color yellow #FFBD5C;
