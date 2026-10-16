@@ -86,7 +86,7 @@
     },
     "custom/terminal": {
         "format":" ",
-        "on-click":"hyprctl dispatch exec kitty",
+        "on-click":"kitty",
         "tooltip-format":"Launch terminal"
     },
     "custom/titlebars": {

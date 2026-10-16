@@ -1,5 +1,5 @@
 #!/bin/sh
-choice=$(printf "  Network Manager\n󰂯 Bluetooth Manager\n  Audio Manager\n Clipboard Manager" | rofi -dmenu -p "Settings" -theme "~/.config/rofi/applets/settings.rasi")
+choice=$(printf "  Network Manager\n󰂯 Bluetooth Manager\n Audio Manager\n Clipboard Manager\n Hyprland Settings" | rofi -dmenu -p "Settings" -theme "~/.config/rofi/applets/settings.rasi")
 
 
 case "$choice" in
@@ -9,11 +9,14 @@ case "$choice" in
   "󰂯 Bluetooth Manager")
     blueman-manager
     ;;
-  "  Audio Manager")
+  " Audio Manager")
     pavucontrol
     ;;
   " Clipboard Manager")
     copyq toggle
+    ;;
+  " Hyprland Settings")
+    ~/.config/scripts/hyprland-settings.sh
     ;;
   *)
     # User pressed Esc or clicked outside

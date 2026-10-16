@@ -1,0 +1,11 @@
+hl.window_rule({ name = "suppress-maximize", match = { class = ".*" }, suppress_event = "maximize" })
+hl.window_rule({ name = "copyq-float", match = { class = "com.github.hluk.copyq" }, float = true, center = true, size = "800 600" })
+hl.window_rule({ name = "satty-float", match = { class = "com.gabm.satty" }, float = true, center = true, size = "800 600" })
+hl.window_rule({ name = "no-focus-empty", match = { class = "^$", title = "^$", xwayland = true, float = true }, no_focus = true, fullscreen = false, pin = false })
+
+hl.layer_rule({ match = { namespace = "logout_dialog" }, blur = true })
+hl.layer_rule({ match = { namespace = "rofi" }, blur = true, ignore_alpha = 0.1, animation = "popin 80%" })
+hl.layer_rule({ match = { namespace = "swaync-notification-window" }, blur = true, ignore_alpha = 0.1 })
+hl.layer_rule({ match = { namespace = "swaync-control-center" }, blur = true, ignore_alpha = 0.1 })
+hl.layer_rule({ match = { namespace = "waybar" }, blur = true, ignore_alpha = 0.1 })
+hl.layer_rule({ match = { namespace = "swayosd" }, blur = true, ignore_alpha = 0.1 })

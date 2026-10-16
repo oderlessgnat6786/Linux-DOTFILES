@@ -1,0 +1,5 @@
+terminal = "kitty"
+fileManager = "nautilus"
+menu = "~/.config/rofi/LAUNCHER.sh || pkill rofi"
+browser = "firefox"
+emoji = "~/.config/rofi/EMOJI.sh"
